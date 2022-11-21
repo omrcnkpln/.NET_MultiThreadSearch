@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MultiThreadSearch.WPF</id>
+    <version>1.0.0</version>
+    <authors>MultiThreadSearch.WPF</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Microsoft.Extensions.Hosting" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\kapla\source\repos\yazlab1-proje2-2022\MultiThreadSearch.WPF\bin\Debug\net6.0-windows\MultiThreadSearch.WPF.runtimeconfig.json" target="lib\net6.0-windows7.0\MultiThreadSearch.WPF.runtimeconfig.json" />
+    <file src="C:\Users\kapla\source\repos\yazlab1-proje2-2022\MultiThreadSearch.WPF\bin\Debug\net6.0-windows\MultiThreadSearch.WPF.dll" target="lib\net6.0-windows7.0\MultiThreadSearch.WPF.dll" />
+  </files>
+</package>

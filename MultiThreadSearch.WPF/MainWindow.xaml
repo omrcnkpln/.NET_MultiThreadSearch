@@ -1,0 +1,42 @@
+﻿<Window x:Class="MultiThreadSearch.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultiThreadSearch.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Kaç thread ile arama yapılacak?" HorizontalAlignment="Left" Height="29" Margin="19,16,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Çalıştır&#xD;&#xA;" HorizontalAlignment="Left" Height="24" Margin="487,112,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click"/>
+        <ComboBox x:Name="columnCombo" HorizontalAlignment="Left" Height="21" Margin="328,79,0,0" VerticalAlignment="Top" Width="232">
+            <ComboBoxItem Content="Product" IsSelected="True"/>
+            <ComboBoxItem Content="Issue"/>
+            <ComboBoxItem Content="Company"/>
+            <ComboBoxItem Content="State"/>
+        </ComboBox>
+        <Label Content="Threshold değeri nedir ?" HorizontalAlignment="Left" Height="31" Margin="19,44,0,0" VerticalAlignment="Top" Width="158"/>
+        <TextBox x:Name="threshold" HorizontalAlignment="Left" Height="22" Margin="328,44,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="232"/>
+        <Label Content="Hangi sütun karşılaştırılacak ?" HorizontalAlignment="Left" Height="29" Margin="19,79,0,0" VerticalAlignment="Top" Width="188"/>
+        <ComboBox x:Name="threadCombo" HorizontalAlignment="Left" Height="21" Margin="328,16,0,0" VerticalAlignment="Top" Width="232">
+            <ComboBoxItem Content="1" IsSelected="True"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <Label Content="Thread 1" HorizontalAlignment="Left" Height="22" Margin="19,210,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Thread 2" HorizontalAlignment="Left" Height="24" Margin="19,245,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Thread 3" HorizontalAlignment="Left" Height="22" Margin="19,280,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Thread 4" HorizontalAlignment="Left" Height="22" Margin="19,315,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Thread 5" HorizontalAlignment="Left" Height="22" Margin="19,350,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="124,210,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="124,245,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="124,280,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="124,315,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="124,350,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Thread İsmi" HorizontalAlignment="Left" Height="23" Margin="19,174,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label Content="Time" HorizontalAlignment="Left" Height="23" Margin="142,174,0,0" VerticalAlignment="Top" Width="76"/>
+
+    </Grid>
+</Window>
