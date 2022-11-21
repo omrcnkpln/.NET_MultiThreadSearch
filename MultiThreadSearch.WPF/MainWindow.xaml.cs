@@ -3,6 +3,7 @@ using MultiThreadSearch.WPF.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Windows;
 
 namespace MultiThreadSearch.WPF
@@ -13,7 +14,7 @@ namespace MultiThreadSearch.WPF
     public partial class MainWindow : Window
     {
         public ICollection<CModel> Complaints = new List<CModel>();
-        public ICollection<MatchModel> Matches = new List<MatchModel>();
+        public static ICollection<MatchModel> Matches = new List<MatchModel>();
         public string Column;
         public int Thread;
         public int Threshold;
@@ -33,12 +34,20 @@ namespace MultiThreadSearch.WPF
             {
                 ReadCsv();
                 Compare();
+
+                //Thread thread1 = new Thread(SomeMethod);
+                //Thread thread1 = new Thread(Compare);
+                //thread1.Start();
+                
+                //int j = 0;
+                //while (j < 50)
+                //{
+                //    Thread thread2 = new Thread(Compare);
+                //    thread1.Start();
+                //}
             }
-
-
-            //Thread ddd = new Thread(test);
         }
-
+        
         public void Compare()
         {
             int baseIndex = 0;
